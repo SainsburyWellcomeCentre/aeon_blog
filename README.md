@@ -25,11 +25,13 @@ Our SDLC roughly follows the [iterative model](https://www.tutorialspoint.com/sd
 
 ### Github
 
-We prioritize and track dev progress using Github Issues in Github Projects. Each code repository has at least 3 project boards at a given time: one for the issues that need to be completed before the next experiment, one for general feature requests and bugs, and one for documentation.
+We prioritize and track dev progress using Github Discussions and Github Issues in Github Projects. Each code repository has at least 3 project boards at a given time: one for the issues that need to be completed before the next experiment, one for general feature requests and bugs, and one for documentation.
 
 ### Contributing
 
-Each repository roughly follows the [gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow): there is a 'main' branch, 'dev' branch, and feature branches branched off of 'dev'. The 'main' branch serves as the production release branch, and the 'dev' branch serves as a bug fix + feature integration branch. When contributing to any repository, the change to be made should first be discussed in a Github Issue. Thereafter, contributors should create a new 'feature' branch (branched off of 'dev') that contains the changes/additions they wish to make, and then create a pull request for merging this feature branch into 'dev'.
+Each repository roughly follows the [gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow): there is a 'main' branch, 'dev' branch, and feature branches branched off of 'dev'. The 'main' branch serves as the production release branch, and the 'dev' branch serves as a bug fix + feature integration branch. 
+
+When contributing to any repository, the change to be made should first be discussed in a Github Discussion or a Github Issue. Thereafter, contributors should create a new 'feature' branch (branched off of 'dev') that contains the changes/additions they wish to make, and then create a pull request for merging this feature branch into 'dev'.
 
 All pull requests will be reviewed by the [project maintainers](#Project-Maintainers). Minimally, maintainers should follow the below steps when reviewing pull requests:
 
