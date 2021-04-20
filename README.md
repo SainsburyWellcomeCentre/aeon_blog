@@ -61,3 +61,4 @@ We believe in the [readme manifesto](http://thinkinghard.com/blog/TheREADMEManif
 - Incorporate CI (Travis and Github Actions)
 - Add link for `style_and_doc_guidelines.md`
 - Separate some of this `readme` out into a `dev_guidelines` file?
+- Add code of conduct
