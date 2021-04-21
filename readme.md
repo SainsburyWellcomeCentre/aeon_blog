@@ -19,7 +19,7 @@ Contains Python code for preprocessing, querying, and analyzing experiment data.
 
 ## Dev Practices
 
-### Iterative SDLC
+### SDLC
 
 Our SDLC roughly follows the [iterative model](https://www.tutorialspoint.com/sdlc/sdlc_iterative_model.htm).
 
@@ -35,11 +35,11 @@ When contributing to any repository, the change to be made should first be discu
 
 All pull requests will be reviewed by the [project maintainers](#Project-Maintainers). Minimally, maintainers should follow the below steps when reviewing pull requests:
 
-1) Ensure code adheres to the [style and documentation guidelines]{#Style-and-Documentation-Guidelines}, is covered by a test, and passes a build test. These can all be checked via CI.
+1) Ensure new code adheres to the [style and documentation guidelines](#Style-and-Documentation-Guidelines), is covered by a test, and passes a build test. These can all be checked via CI.
 
 2) As necessary, update the `changelog`, `readme`, and any other relevant doc and config files.
 
-3) Follow the ["squash, rebase, merge"](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/) workflow when merging the pull request.
+3) Follow the ["squash, rebase, merge"](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/) workflow when merging the pull request. In essence, this means that upon completion of a feature branch that is ready to be merged into 'dev', 1) the feature branch should be pushed to github; 2) locally, the feature branch should be rebased and squashed down to the commit from which it branch off of 'dev' (this is a useful git command for finding the "branched off" commit: `git log --graph --decorate --pretty=oneline --abbrev-commit`, and this for rebase squashing: `git rebase -i <commitSHA>`); 3) the feature branch should be merged into 'dev'; 4) the feature branch should be deleted locally. This way it is ensured that the feature branch keeps its full history on github, while the 'dev' branch keeps an abridged history that is easy to read and undo.
 
 Once the project maintainers agree that the 'dev' branch has accumulated sufficient changes to be considered a new release, a pull request should be opened into 'main' from 'dev'. Upon merging 'dev' into 'main', a new release should be made from 'main'. Release version numbering should follow [SemVer](http://semver.org/). 
 
@@ -60,5 +60,4 @@ We believe in the [readme manifesto](http://thinkinghard.com/blog/TheREADMEManif
 - Write-up style and documentation guidelines doc (separate sections by language?)
 - Incorporate CI (Travis and Github Actions)
 - Add link for `style_and_doc_guidelines.md`
-- Separate some of this `readme` out into a `dev_guidelines` file?
 - Add code of conduct
