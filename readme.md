@@ -1,7 +1,6 @@
 # blog
 
-Details Project Aeon, with a focus on dev practices and entries on 
-technology review, challenges and insights.
+Details Project Aeon, with a focus on dev practices and entries on technology review, challenges and insights.
 
 ## ProjectAeon Organization Overview
 
@@ -13,7 +12,7 @@ ProjectAeon is a colloborative effort to perform behavioral neuroscience experim
 
 Contains Bonsai visual programming workflows for running the behavioral task and acquiring experiment data.
 
-#### [data-management](https://github.com/ProjectAeon/data-management)
+#### [aeon](https://github.com/ProjectAeon/aeon)
 
 Contains Python code for preprocessing, querying, and analyzing experiment data.
 
