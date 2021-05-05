@@ -1,6 +1,6 @@
 # blog
 
-Details Project Aeon, with a focus on dev practices and entries on technology review, challenges and insights.
+Details Project Aeon, with a focus on dev practices and notes on technology review, challenges and insights.
 
 ## ProjectAeon Organization Overview
 
@@ -48,7 +48,7 @@ Please see [style_and_doc_guidelines.md]()
 
 ### Other
 
-We believe in the [readme manifesto](http://thinkinghard.com/blog/TheREADMEManifesto.html), which says that `readme` files should provide at least a general description that covers _all_ of a project's files, and that one `readme` per subdirectory is good practice.
+We believe in the [readme manifesto](http://thinkinghard.com/blog/TheREADMEManifesto.html), which says that `readme` files should provide at least a general description that covers _all_ of a project's files, and that one `readme` per subdirectory is generally good practice.
 
 ## Project Maintainers
 
