@@ -6,15 +6,17 @@ Details Project Aeon, with a focus on dev practices and notes on technology revi
 
 ProjectAeon is a colloborative effort to perform behavioral neuroscience experiments where the behavior and neural activity of freely moving animals engaging in a complex task are continuously recorded. This project is contributed to by researchers and support staff at UCL's SWC, Neurogears, and Datajoint.
 
-### Repositories
+## Repositories
 
-#### [acquisition](https://github.com/ProjectAeon/acquisition)
+### [acquisition](https://github.com/ProjectAeon/acquisition)
 
 Contains Bonsai visual programming workflows for running the behavioral task and acquiring experiment data.
 
-#### [aeon](https://github.com/ProjectAeon/aeon)
+### [aeon](https://github.com/ProjectAeon/aeon)
 
 Contains Python code for preprocessing, querying, and analyzing experiment data.
+
+*Note*: All experiment data is acquired and/or triggered and/or synced by [Harp devices](https://www.cf-hw.org/harp). Code in the 'acquisition' and 'aeon' repos makes use of the [Harp protocol](https://github.com/harp-tech/protocol) during data acquisition, raw data file writing, and raw data file reading. In the 'harp-tech/protocol' Github repo, you can find documentation on [Harp device operation and common registers](https://github.com/harp-tech/protocol/blob/master/Device%201.0%201.4%2020200901.pdf), the [Harp binary protocol](https://github.com/harp-tech/protocol/blob/master/Binary%20Protocol%201.0%201.1%2020180223.pdf), and [Harp clock synchronization](https://github.com/harp-tech/protocol/blob/master/Synchronization%20Clock%201.0%201.0%2020200712.pdf).
 
 ## Dev Practices
 
