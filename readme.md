@@ -46,12 +46,21 @@ Once the project maintainers agree that the 'dev' branch has accumulated suffici
 
 ### Style and Documentation Guidelines
 
-Please see `style_and_doc_guidelines.md`.
+Please see our [style and documentation guidelines](https://github.com/ProjectAeon/blog/blob/main/style_and_doc_guidelines.md).
 
-### Other
+We also believe in the [readme manifesto](http://thinkinghard.com/blog/TheREADMEManifesto.html), which says that `readme` files should provide at least a general description that covers _all_ of a project's files, and that one `readme` per subdirectory is generally good practice.
 
-We believe in the [readme manifesto](http://thinkinghard.com/blog/TheREADMEManifesto.html), which says that `readme` files should provide at least a general description that covers _all_ of a project's files, and that one `readme` per subdirectory is generally good practice.
+### Code of Conduct
+
+Please see our [code of conduct](https://github.com/ProjectAeon/blog/blob/main/code_of_conduct.md).
 
 ## Project Maintainers
 
 Gonçalo Lopes, Jai Bhagat.
+
+## Repository Contents
+
+- `code_of_conduct.md`: Our organization's code of conduct.
+- `design_considerations.md`: Design considerations for Project Aeon.
+- `init_proj.sh`: A script for initializing a project repository.
+- `style_and_doc_guidelines.md`: Code style and documentation guidelines for Project Aeon.
