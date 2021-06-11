@@ -46,7 +46,7 @@ Once the project maintainers agree that the 'dev' branch has accumulated suffici
 
 ### Style and Documentation Guidelines
 
-Please see [style_and_doc_guidelines.md]()
+Please see `style_and_doc_guidelines.md`.
 
 ### Other
 
@@ -54,11 +54,4 @@ We believe in the [readme manifesto](http://thinkinghard.com/blog/TheREADMEManif
 
 ## Project Maintainers
 
-(Andre, Filipe, Dario?) Gonçalo Lopes, Jai Bhagat, Thinh Nguyen.
-
-## Todos
-
-- Write-up style and documentation guidelines doc (separate sections by language?)
-- Incorporate CI (Travis and Github Actions)
-- Add link for `style_and_doc_guidelines.md`
-- Add code of conduct
+Gonçalo Lopes, Jai Bhagat.
