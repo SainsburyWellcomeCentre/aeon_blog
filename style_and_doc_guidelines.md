@@ -60,3 +60,5 @@ We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep25
 * Block comments read as a narrative.
 * Complex conditional expressions are avoided; they are replaced with logical variables.
 * Imports are organized just below a file's header, in three sections: 1) packages belonging to the standard library, 2) popular packages, 3) personal packages.
+* In function calls, parameters shuold be specified.
+* Underscores should be used for "private" functions

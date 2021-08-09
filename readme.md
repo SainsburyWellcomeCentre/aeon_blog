@@ -6,6 +6,14 @@ Details Project Aeon, with a focus on dev practices and notes on technology revi
 
 ProjectAeon is a colloborative effort to perform behavioral neuroscience experiments where the behavior and neural activity of freely moving animals engaging in a complex task are continuously recorded. This project is contributed to by researchers and support staff at UCL's SWC, Neurogears, and Datajoint.
 
+## Credentials
+
+Currently, there are five required sets of credentials for Project Aeon's members. 
+
+- Microsoft Teams: contact Jai Bhagat at j.bhagat@ucl.ac.uk
+- SWC HPC username, 'aeon' Linux group, & github organization: contact SWC Helpdesk at helpdesk@swc.ucl.ac.uk
+- Datajoint database username: contact Chris Turner at chris@vathes.com 
+
 ## Repositories
 
 ### [acquisition](https://github.com/ProjectAeon/acquisition)
