@@ -6,6 +6,8 @@ Details Project Aeon, with a focus on dev practices and notes on technology revi
 
 ProjectAeon is a colloborative effort to perform behavioral neuroscience experiments where the behavior and neural activity of freely moving animals engaging in a complex task are continuously recorded. This project is contributed to by researchers and support staff at UCL's SWC, Neurogears, and Datajoint.
 
+If you are interested in joining this project, please contact Jai Bhagat (j.bhagat@ucl.ac.uk) and one of the SWC Group Leaders.
+
 ## Credentials
 
 Currently, there are five required sets of credentials for Project Aeon's members. 
@@ -16,11 +18,13 @@ Currently, there are five required sets of credentials for Project Aeon's member
 
 ## Repositories
 
-### [acquisition](https://github.com/ProjectAeon/acquisition)
+You must be a project member to view these repositories.
+
+### [aeon_acquisition](https://github.com/SainsburyWellcomeCentre/aeon_acquisition)
 
 Contains Bonsai visual programming workflows for running the behavioral task and acquiring experiment data.
 
-### [aeon](https://github.com/ProjectAeon/aeon)
+### [aeon_mecha](https://github.com/SainsburyWellcomeCentre/aeon_mechha)
 
 Contains Python code for preprocessing, querying, and analyzing experiment data.
 
@@ -68,7 +72,9 @@ Gonçalo Lopes, Jai Bhagat.
 
 ## Repository Contents
 
-- `code_of_conduct.md`: Our organization's code of conduct.
+- `code_of_conduct.md`: Project Aeon's code of conduct.
 - `design_considerations.md`: Design considerations for Project Aeon.
+- `glossary.tsv`: A glossary of Project Aeon terminology.
 - `init_proj.sh`: A script for initializing a project repository.
+- `member_info.tsv`: A table with Project Aeon member names and affiliations.
 - `style_and_doc_guidelines.md`: Code style and documentation guidelines for Project Aeon.
