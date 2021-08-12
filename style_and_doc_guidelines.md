@@ -12,17 +12,17 @@ We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep25
 
 ## Function and Class Docstrings
 
-* Functions have the following sections in the given order:
+* Function names should describe the action they perform. Functions have the following sections in the given order:
 	- One-line summary description, typically as a verb phrase
 	- Long description (optional)
-	- Inputs (optional)
-	- Outputs (optional)
+	- Inputs
+	- Outputs
 	- Examples (optional if included in a separate file)
 	- Warnings/Exceptions (optional)
 	- Additional notes (optional)
 	- See also (optional)
 	- Todos (optional)
-* Classes have the following sections in the given order:
+* Class names should describe the entity they represent. Classes have the following sections in the given order:
 	- One-line summary description, typically as a noun phrase
 	- Long description (optional)
 	- Examples (optional if included in a separate file)
