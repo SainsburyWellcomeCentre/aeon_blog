@@ -6,13 +6,13 @@ Details Project Aeon, with a focus on dev practices and notes on technology revi
 
 ProjectAeon is a colloborative effort to perform behavioral neuroscience experiments where the behavior and neural activity of freely moving animals engaging in a complex task are continuously recorded. This project is contributed to by researchers and support staff at UCL's SWC, Neurogears, and Datajoint.
 
-If you are interested in joining this project, please contact Jai Bhagat (j.bhagat@ucl.ac.uk) and one of the SWC Group Leaders.
+If you are interested in joining this project, please contact Jai Bhagat (j.bhagat@ucl.ac.uk) AND/OR Goncalo Lopes (g.lopes@neurogears.org) AND/OR Dario Campagner (d.campagner@ucl.ac.uk) AND one of the SWC Group Leaders.
 
 ## Credentials
 
 Currently, there are five required sets of credentials for Project Aeon's members. 
 
-- Microsoft Teams: contact Jai Bhagat at j.bhagat@ucl.ac.uk
+- Microsoft Teams: contact Jai Bhagat, Goncalo Lopes, or Dario Campagner
 - SWC HPC username, 'aeon' Linux group, & github organization: contact SWC Helpdesk at helpdesk@swc.ucl.ac.uk
 - Datajoint database username: contact Chris Turner at chris@vathes.com 
 
@@ -42,9 +42,9 @@ We prioritize and track dev progress using Github Discussions and Github Issues 
 
 ### Contributing
 
-Each repository roughly follows the [gitflow workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow): there is a 'main' branch, 'dev' branch, and feature branches branched off of 'dev'. The 'main' branch serves as the production release branch, and the 'dev' branch serves as a bug fix + feature integration branch. 
+Each repository roughly follows the [github flow](https://guides.github.com/introduction/flow/) (which is adapted from the more general [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)). In brief, each of our repos has a 'main' branch which serves as our "in-production" branch, and we have feature and bug fix branches branched off of 'main'. At certain agreed upon timepoints we create a "stable release" from our main branch which serves as a snapshot of the code at the time, version numbered according to [SemVer](http://semver.org/).
 
-When contributing to any repository, the change to be made should first be discussed in a Github Discussion or a Github Issue. Thereafter, contributors should create a new 'feature' branch (branched off of 'dev') that contains the changes/additions they wish to make, and then create a pull request for merging this feature branch into 'dev'.
+When contributing to any repository, the change to be made should first be discussed in a Github Discussion or a Github Issue. Thereafter, contributors should create a new branch (branched off of 'main') that contains the changes/additions they wish to make, and then create a pull request for merging this branch into 'main'.
 
 All pull requests will be reviewed by the [project maintainers](#Project-Maintainers). Minimally, maintainers should follow the below steps when reviewing pull requests:
 
@@ -53,8 +53,6 @@ All pull requests will be reviewed by the [project maintainers](#Project-Maintai
 2) As necessary, update the `changelog`, `readme`, and any other relevant doc and config files.
 
 3) Follow the ["squash, rebase, merge"](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/) workflow when merging the pull request. In essence, this means that upon completion of a feature branch that is ready to be merged into 'dev', 1) the feature branch should be pushed to github; 2) locally, the feature branch should be rebased and squashed down to the commit from which it branch off of 'dev' (this is a useful git command for finding the "branched off" commit: `git log --graph --decorate --pretty=oneline --abbrev-commit`, and this for rebase squashing: `git rebase -i <commitSHA>`); 3) the feature branch should be merged into 'dev'; 4) the feature branch should be deleted locally. This way it is ensured that the feature branch keeps its full history on github, while the 'dev' branch keeps an abridged history that is easy to read and undo.
-
-Once the project maintainers agree that the 'dev' branch has accumulated sufficient changes to be considered a new release, a pull request should be opened into 'main' from 'dev'. Upon merging 'dev' into 'main', a new release should be made from 'main'. Release version numbering should follow [SemVer](http://semver.org/). 
 
 ### Style and Documentation Guidelines
 
