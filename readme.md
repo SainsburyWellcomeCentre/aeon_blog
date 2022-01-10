@@ -17,7 +17,7 @@ Below are the required sets of credentials for Project Aeon's members:
 - SWC Github 'aeon' project: contact Jai Bhagat or Goncalo Lopes
 - SWC HPC: contact SWC Helpdesk (helpdesk@swc.ucl.ac.uk)
 - 'aeon' HPC Linux group: contact SWC Helpdesk (helpdesk@swc.ucl.ac.uk)
-- Datajoint database username: contact Chris Turner (chris@vathes.com)
+- Datajoint database username: contact Thinh Nguyen (thinh@vathes.com)
 
 To be granted these credentials, please send a single email to all contact parties requesting this access.
 
