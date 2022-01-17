@@ -37,28 +37,28 @@ We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep25
 * Vertical whitespace is used sparingly, but can be used to improve readability between code blocks/sections.
 * Horizontal whitespace is used sparingly, but can be used to improve readability between long and/or complex operations and conditionals.
 * Each line contains no more than 79 characters. Whitespace is used to align statements that span multiple lines via a hanging indent or single indent.
-* Docstrings are followed by a blank line, and function definitions are followed by two blank lines.
+* Docstrings are followed by a blank line before the code begins.
 
 ## Comment conventions
 
-* Block quotes are written as full sentences above the corresponding code. 
-* Inline quotes are written as a short phrase that starts two spaces after the corresponding code.
-* Variables are commented where they are declared.
+* Block comments are written as full sentences above the corresponding code. 
+* Inline comments are written as a short phrase that starts two spaces after the corresponding code.
 * Code referenced in comments are surrounded by back ticks for readability.
+* Comments are used to describe variables where they are declared.
 
 ## Additional Conventions
 
 * Naming conventions:
-	- Variable and function names are in lower snake_case (e.g. `exp_ref`, `infer_parameters` with a `_` in between each individual word representation)
+	- Variable and function names are in lower snake_case (e.g. `exp_ref`, `infer_parameters` with a `_` in between each individual word representation).
 	- Classes are in upper Snake_Case (e.g. `Alyx_Panel`).
 	- Prefix 'n' is used for integer values e.g. `n_items`.
 	- Suffix 'num' is used for referring to a particular instance e.g. `item_num`.
-	- Suffices that indicate unit measurement are used when using multiple units e.g. `wheel_deg` and `wheel_mm`
-	- Reuse of variable names (i.e. mutation) is avoided.
+	- Suffices that indicate unit measurement are used when using multiple units e.g. `wheel_deg` and `wheel_mm`.
+	- Re-use of variable names (i.e. mutation) is avoided.
 	- Same variable names across files have the same meanings.
 * Comments are for explaining _what_ a particular chunk of code does when it may be unintuitive, not for explaining exactly _how_ the code does what it does.
 * Block comments read as a narrative.
 * Complex conditional expressions are avoided; they are replaced with logical variables.
 * Imports are organized just below a file's header, in three sections: 1) packages belonging to the standard library, 2) popular packages, 3) personal packages.
-* In function calls, parameters shuold be specified.
-* Underscores should be used for "private" functions
+* In function calls, parameters should be specified.
+* Leading underscores are reserved for "private" functions.
