@@ -38,6 +38,7 @@ We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep25
 * Horizontal whitespace is used sparingly, but can be used to improve readability between long and/or complex operations and conditionals.
 * Each line contains no more than 79 characters. Whitespace is used to align statements that span multiple lines via a hanging indent or single indent.
 * Docstrings are followed by a blank line before the code begins.
+* Line terminations are LF, not CRLF.
 
 ## Comment conventions
 
