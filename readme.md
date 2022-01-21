@@ -6,7 +6,7 @@ Details Project Aeon, with a focus on dev practices and notes on technology revi
 
 ProjectAeon is a colloborative effort to perform behavioral neuroscience experiments where the behavior and neural activity of freely moving animals engaging in a complex task are continuously recorded. This project is contributed to by researchers and support staff at UCL's SWC, Neurogears, and Datajoint.
 
-If you are interested in joining this project, please contact Jai Bhagat (j.bhagat@ucl.ac.uk) AND/OR Goncalo Lopes (g.lopes@neurogears.org) AND/OR Dario Campagner (d.campagner@ucl.ac.uk) AND one of the [SWC Group Leaders](https://www.sainsburywellcome.org/web/people).
+If you are interested in joining this project, please first contact Jai Bhagat (jai.bhagat.21@ucl.ac.uk) and/or Goncalo Lopes (g.lopes@neurogears.org) and/or Dario Campagner (d.campagner@ucl.ac.uk).
 
 ## Credentials
 
@@ -15,8 +15,8 @@ Below are the required sets of credentials for Project Aeon's members:
 - Microsoft Teams: contact Jai Bhagat, Goncalo Lopes, or Dario Campagner
 - SWC Github organization: contact SWC Helpdesk(helpdesk@swc.ucl.ac.uk)
 - SWC Github 'aeon' project: contact Jai Bhagat or Goncalo Lopes
-- SWC HPC: contact SWC Helpdesk (helpdesk@swc.ucl.ac.uk)
-- 'aeon' HPC Linux group: contact SWC Helpdesk (helpdesk@swc.ucl.ac.uk)
+- SWC HPC: contact SWC Helpdesk
+- 'aeon' HPC Linux group: contact SWC Helpdesk
 - Datajoint database username: contact Thinh Nguyen (thinh@vathes.com)
 
 To be granted these credentials, please send a single email to all contact parties requesting this access.
@@ -57,7 +57,7 @@ All pull requests will be reviewed by the [project maintainers](#Project-Maintai
 
 2) As necessary, update the `changelog`, `readme`, and any other relevant doc and config files.
 
-3) Follow the ["squash, rebase, merge"](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/) workflow when merging the pull request. In essence, this means that upon completion of a feature branch that is ready to be merged into 'main', 1) the feature branch should be pushed to github; 2) locally, the feature branch should be rebased and squashed down to the commit from which it branch off of 'main' (this is a useful git command for finding the "branched off" commit: `git log --graph --decorate --pretty=oneline --abbrev-commit`, and this for rebase squashing: `git rebase -i <commitSHA>`); 3) the feature branch should be merged into 'main'; 4) the feature branch should be deleted locally. This way it is ensured that the feature branch keeps its full history on github, while the 'main' branch keeps an abridged history that is easy to read and undo.
+3) Follow the ["squash, rebase, merge"](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/) workflow when merging the pull request. In essence, this means that upon completion of a feature branch that is ready to be merged into 'main', 1) the feature branch should be pushed to github; 2) locally, the feature branch should be rebased and squashed down to the commit from which it branched off of 'main' (this is a useful git command for finding the "branched off" commit: `git log --graph --decorate --pretty=oneline --abbrev-commit`, and this for rebase squashing: `git rebase -i <commitSHA>`); 3) the feature branch should be merged into 'main'; 4) the feature branch should be deleted locally. This way it is ensured that the feature branch keeps its full history on github, while the 'main' branch keeps an abridged history that is easy to read and undo.
 
 ### Style and Documentation Guidelines
 
