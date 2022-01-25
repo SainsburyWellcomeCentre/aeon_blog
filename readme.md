@@ -55,7 +55,7 @@ All pull requests will be reviewed by the [project maintainers](#Project-Maintai
 
 1) Ensure new code adheres to the [style and documentation guidelines](#Style-and-Documentation-Guidelines), is covered by a test, and passes a build test. These can all be checked via CI.
 
-2) As necessary, update the `changelog`, `readme`, and any other relevant doc and config files.
+2) As necessary, update the `changelog`, `readme`, callgraphs, env config files, and any other relevant doc and config files.
 
 3) Follow the ["squash, rebase, merge"](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/) workflow when merging the pull request. In essence, this means that upon completion of a feature branch that is ready to be merged into 'main', 1) the feature branch should be pushed to github; 2) locally, the feature branch should be rebased and squashed down to the commit from which it branched off of 'main' (this is a useful git command for finding the "branched off" commit: `git log --graph --decorate --pretty=oneline --abbrev-commit`, and this for rebase squashing: `git rebase -i <commitSHA>`); 3) the feature branch should be merged into 'main'; 4) the feature branch should be deleted locally. This way it is ensured that the feature branch keeps its full history on github, while the 'main' branch keeps an abridged history that is easy to read and undo.
 
