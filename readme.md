@@ -8,11 +8,11 @@ review, challenges and insights.
 ProjectAeon is a collaborative effort to perform behavioral neuroscience 
 experiments where the behavior and neural activity of freely moving animals 
 engaging in a complex task are continuously recorded. This project is 
-contributed to by researchers and support staff at UCL's SWC, Neurogears,  
+contributed to by researchers and support staff at UCL's SWC, Neurogears, 
 and Datajoint.
 
-If you are interested in joining this project, please contact Jai Bhagat  
-(j.bhagat@ucl.ac.uk) and/or Goncalo Lopes (g.lopes@neurogears.org) and/or  
+If you are interested in joining this project, please contact Jai Bhagat 
+(j.bhagat@ucl.ac.uk) and/or Goncalo Lopes (g.lopes@neurogears.org) and/or 
 Dario Campagner (d.campagner@ucl.ac.uk).
 
 ## Credentials
@@ -37,14 +37,14 @@ You must be an SWC Github 'aeon' project member to view these repositories.
 
 ![aeon_mecha_env_build_and_tests](https://github.com/SainsburyWellcomeCentre/aeon_mecha/actions/workflows/build_env_run_tests.yml/badge.svg?branch=reorg)
 
-Contains Python code for preprocessing, querying, and analyzing experiment  
+Contains Python code for preprocessing, querying, and analyzing experiment 
 data. This is the main user repository.
 
-*Note*: All experiment data is acquired and/or triggered and/or synced by  
+*Note*: All experiment data is acquired and/or triggered and/or synced by 
 [Harp devices](https://www.cf-hw.org/harp). Code in the 'aeon_acquisition' 
 and 'aeon_mecha' repos makes use of the 
 [Harp protocol](https://github.com/harp-tech/protocol) during data 
-acquisition, raw data file writing, and raw data file reading. In the  
+acquisition, raw data file writing, and raw data file reading. In the 
 'harp-tech/protocol' Github repo, you can find documentation on 
 [Harp device operation and common registers](https://github.com/harp-tech/protocol/blob/master/Device%201.0%201.4%2020200901.pdf), 
 the 
@@ -98,7 +98,7 @@ documentation.
 
 We use Github Actions to run CI. We run unit tests on Github Virtual 
 Machines on Windows, MacOS, and Ubuntu. We run integration tests on the SWC 
-HPC. Workflows of the CI jobs we run can be found in each repo's respective
+HPC. Workflows of the CI jobs we run can be found in each repo's respective 
 `.github/workflows/` directory.
 
 ### Contributing
