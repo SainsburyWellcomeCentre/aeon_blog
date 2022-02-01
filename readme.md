@@ -35,6 +35,8 @@ You must be an SWC Github 'aeon' project member to view these repositories.
 
 ### [aeon_mecha](https://github.com/SainsburyWellcomeCentre/aeon_mecha)
 
+![aeon_mecha_env_build_and_tests](https://github.com/SainsburyWellcomeCentre/aeon_mecha/actions/workflows/build_env_run_tests.yml/badge.svg?branch=reorg)
+
 Contains Python code for preprocessing, querying, and analyzing experiment  
 data. This is the main user repository.
 
