@@ -78,6 +78,7 @@
     | `dispenser_state` | `200` | `float32` | value | the estimated number of pellets in the dispenser |
     | `delivery_manual` | `201` | `uint8` | event | a manual pellet delivery has been requested |
     | `missed_pellet` | `202` | `uint8` | event | a pellet has been missed |
+    | `delivery_retry`  | `203` | `uint8` | bitmask | a pellet delivery command has been retried |
 
 ### WeightScale
 
