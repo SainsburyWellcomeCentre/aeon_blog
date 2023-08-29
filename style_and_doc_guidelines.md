@@ -2,12 +2,11 @@
 
 The purpose of this document is to establish Project Aeon code style and documentation guidelines.
 
-We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep257](https://www.python.org/dev/peps/pep-0257/), and [numpy's style guide](https://numpydoc.readthedocs.io/en/latest/format.html) for code style and docstring style guidelines, for all programming languages we use. We run black and flake8 to format our Python code, the config settings for which can be found in our `pyproject.toml` and `.flake8` files.
+We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep257](https://www.python.org/dev/peps/pep-0257/), and [google's style guide](https://google.github.io/styleguide/pyguide.html) for code and docstring style guidelines. We run black, ruff, and pyright to format our Python code, the config settings for which can be found in a repository's `pyproject.toml`.
 
 ## General Guidelines
 
 * All files contain a header that briefly describes the contents within a few sentences.
-* Code blocks/sections are enclosed in comments that begin and end with `<s` and `/s>`, respectively. Nested subsections are used by adding an `s` for each nesting; e.g., a subsubsection begins and ends with `<sss` and `/sss>`, respectively.
 * In general, more lines for the sake of clarity is preferred over brevity.
 
 ## Function and Class Docstrings
@@ -24,6 +23,7 @@ We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep25
 	- Todos (optional)
 * Class names should describe the entity they represent. Classes have the following sections in the given order:
 	- One-line summary description, typically as a noun phrase
+	- Properties / Attributes
 	- Long description (optional)
 	- Examples (optional if included in a separate file)
 	- Warnings/Exceptions (optional)
@@ -36,8 +36,7 @@ We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep25
 * A tab/indent is set at four spaces.
 * Vertical whitespace is used sparingly, but can be used to improve readability between code blocks/sections.
 * Horizontal whitespace is used sparingly, but can be used to improve readability between long and/or complex operations and conditionals.
-* Each line contains no more than 79 characters. Whitespace is used to align statements that span multiple lines via a hanging indent or single indent.
-* Docstrings are followed by a blank line before the code begins.
+* Each line contains no more than 108 characters.
 * Line terminations are LF, not CRLF.
 
 ## Comment conventions
@@ -55,11 +54,9 @@ We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep25
 	- Prefix 'n' is used for integer values e.g. `n_items`.
 	- Suffix 'num' is used for referring to a particular instance e.g. `item_num`.
 	- Suffices that indicate unit measurement are used when using multiple units e.g. `wheel_deg` and `wheel_mm`.
-	- Re-use of variable names (i.e. mutation) is avoided.
-	- Same variable names across files have the same meanings.
+	- Re-use of variable names (i.e. mutation) is generally avoided.
+	- Variables across related files which share names should share meanings.
 * Comments are for explaining _what_ a particular chunk of code does when it may be unintuitive, not for explaining exactly _how_ the code does what it does.
 * Block comments read as a narrative.
-* Complex conditional expressions are avoided; they are replaced with logical variables.
-* Imports are organized just below a file's header, in three sections: 1) packages belonging to the standard library, 2) popular packages, 3) personal packages.
-* In function calls, parameters should be specified.
+* In function calls, keyword arguments should should be specified when not obvious.
 * Leading underscores are reserved for "private" functions.
