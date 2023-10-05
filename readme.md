@@ -6,7 +6,7 @@ Details Project Aeon, with a focus on dev practices and notes on technology revi
 
 ProjectAeon is a collaborative effort to perform behavioral neuroscience experiments where the behavior and neural activity of freely moving animals engaging in a complex task are continuously recorded. This project is contributed to by researchers and support staff at UCL's SWC, Neurogears, and Datajoint.
 
-If you are interested in joining this project, please contact Jai Bhagat (jai.bhagat.21@ucl.ac.uk) and/or Goncalo Lopes (g.lopes@neurogears.org) and/or Dario Campagner (d.campagner@ucl.ac.uk).
+If you are interested in joining this project, please contact the [project maintainers](#Project-Maintainers).
 
 ## Credentials
 
@@ -115,7 +115,11 @@ Please see our
 
 ## Project Maintainers
 
-Gonçalo Lopes, Jai Bhagat.
+Jai Bhagat (jai.bhagat.21@ucl.ac.uk)
+
+Gonçalo Lopes (g.lopes@neurogears.org)
+
+Dario Campagner (d.campagner@ucl.ac.uk)
 
 ## Repository Contents
 
