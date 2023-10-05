@@ -1,19 +1,12 @@
 # blog
 
-Details Project Aeon, with a focus on dev practices and notes on technology 
-review, challenges and insights.
+Details Project Aeon, with a focus on dev practices and notes on technology review, challenges and insights.
 
 ## ProjectAeon Organization Overview
 
-ProjectAeon is a collaborative effort to perform behavioral neuroscience 
-experiments where the behavior and neural activity of freely moving animals 
-engaging in a complex task are continuously recorded. This project is 
-contributed to by researchers and support staff at UCL's SWC, Neurogears, 
-and Datajoint.
+ProjectAeon is a collaborative effort to perform behavioral neuroscience experiments where the behavior and neural activity of freely moving animals engaging in a complex task are continuously recorded. This project is contributed to by researchers and support staff at UCL's SWC, Neurogears, and Datajoint.
 
-If you are interested in joining this project, please contact Jai Bhagat 
-(j.bhagat@ucl.ac.uk) and/or Goncalo Lopes (g.lopes@neurogears.org) and/or 
-Dario Campagner (d.campagner@ucl.ac.uk).
+If you are interested in joining this project, please contact Jai Bhagat (jai.bhagat.21@ucl.ac.uk) and/or Goncalo Lopes (g.lopes@neurogears.org) and/or Dario Campagner (d.campagner@ucl.ac.uk).
 
 ## Credentials
 
@@ -26,137 +19,94 @@ Below are the required sets of credentials for Project Aeon's members:
 - 'aeon' HPC Linux group: contact SWC Helpdesk
 - Datajoint database username: contact Thinh Nguyen (thinh@vathes.com)
 
-To be granted these credentials, please send a single email to all contact
-parties requesting this access.
+To be granted these credentials, please send a single email to all contact parties requesting this access.
 
 ## Repositories
 
-You must be an SWC Github 'aeon' project member to view these repositories.
+You must be an SWC Github 'aeon' project member to view some of these repositories.
 
 ### [aeon_mecha](https://github.com/SainsburyWellcomeCentre/aeon_mecha)
 
-![aeon_mecha_env_build_and_tests](https://github.com/SainsburyWellcomeCentre/aeon_mecha/actions/workflows/build_env_run_tests.yml/badge.svg?branch=reorg)
-[![aeon_mecha_tests_code_coverage](https://codecov.io/gh/SainsburyWellcomeCentre/aeon_mecha/branch/reorg/graph/badge.svg?token=973EC1CG03)](https://codecov.io/gh/SainsburyWellcomeCentre/aeon_mecha)
+![aeon_mecha_env_build_and_tests](https://github.com/SainsburyWellcomeCentre/aeon_mecha/actions/workflows/build_env_run_tests.yml/badge.svg?branch=main)
+[![aeon_mecha_tests_code_coverage](https://codecov.io/gh/SainsburyWellcomeCentre/aeon_mecha/branch/main/graph/badge.svg?token=973EC1CG03)](https://codecov.io/gh/SainsburyWellcomeCentre/aeon_mecha)
 
-Contains Python code for preprocessing, querying, and analyzing experiment 
-data. This is the main user repository.
+Project Aeon's main library for interfacing with acquired data. Contains Python modules for raw data file io, data querying, data processing, data qc, database ingestion, and building computational data pipelines. This is the main user repository.
 
-*Note*: All experiment data is acquired and/or triggered and/or synced by 
-[Harp devices](https://www.cf-hw.org/harp). Code in the 'aeon_acquisition' 
-and 'aeon_mecha' repos makes use of the 
-[Harp protocol](https://github.com/harp-tech/protocol) during data 
-acquisition, raw data file writing, and raw data file reading. In the 
-'harp-tech/protocol' Github repo, you can find documentation on 
-[Harp device operation and common registers](https://github.com/harp-tech/protocol/blob/master/Device%201.0%201.4%2020200901.pdf), 
-the 
-[Harp binary protocol](https://github.com/harp-tech/protocol/blob/master/Binary%20Protocol%201.0%201.1%2020180223.pdf), 
-and 
-[Harp clock synchronization](https://github.com/harp-tech/protocol/blob/master/Synchronization%20Clock%201.0%201.0%2020200712.pdf).
+*Note*: All experiment data is acquired and/or triggered and/or synced by [Harp devices](https://www.cf-hw.org/harp). Code in the 'aeon_acquisition' and 'aeon_mecha' repos makes use of the [Harp protocol](https://github.com/harp-tech/protocol) during data acquisition, raw data file writing, and raw data file reading. In the 'harp-tech/protocol' Github repo, you can find documentation on [Harp device operation and common registers](https://github.com/harp-tech/protocol/blob/master/Device%201.0%201.4%2020200901.pdf), the [Harp binary protocol](https://github.com/harp-tech/protocol/blob/master/Binary%20Protocol%201.0%201.1%2020180223.pdf), and [Harp clock synchronization](https://github.com/harp-tech/protocol/blob/master/Synchronization%20Clock%201.0%201.0%2020200712.pdf).
+
+### [aeon_experiments](https://github.com/SainsburyWellcomeCentre/aeon_experiments)
+
+Contains experiment workflows written in the Bonsai visual programming language.
 
 ### [aeon_acquisition](https://github.com/SainsburyWellcomeCentre/aeon_acquisition)
 
-Contains Bonsai visual programming workflows for running the behavioral task 
-and acquiring experiment data.
+Contains the source code for the 'aeon_acquisition' Bonsai package, which is heavily used in workflows in 'aeon_experiments'.
+
+### [aeon_analysis](https://github.com/SainsburyWellcomeCentre/aeon_analysis)
+
+Contains Python modules for analysis of Aeon experiment data.
+
+### [aeon_lineardrive](https://github.com/SainsburyWellcomeCentre/aeon_lineardrive)
+
+Contains source code for actuating a linear drive motor used in Aeon experiments (designed primarily for moving electrophysiology cabling during freely-moving experiments).
+
+### [aeon_feeder](https://github.com/SainsburyWellcomeCentre/aeon_feeder)
+
+Contains low-level source code for pellet delivery via feeders used in Aeon experiments.
+
+### [aeon_docs](https://github.com/SainsburyWellcomeCentre/aeon_docs)
+
+Contains source code for the Aeon docs site, built via Sphinx. Built docs at: https://sainsburywellcomecentre.github.io/aeon_docs/
 
 ## Dev Practices
 
 ### Software Development Life Cycle (SDLC)
 
-Our SDLC roughly follows the 
-[iterative model](https://www.tutorialspoint.com/sdlc/sdlc_iterative_model.htm).
+Our SDLC roughly follows the [iterative model](https://www.tutorialspoint.com/sdlc/sdlc_iterative_model.htm).
 
 ### Versioning
 
-We version all the following, according to [SemVer](http://semver.org/) 
-numbering: 
+We version all the following, according to [SemVer](http://semver.org/) numbering: 
 
-- experiments, by name, including full hardware specs (arena, I/O devices, 
-  acquisition computer)
-    
-- repositories
-
-- aeon-db
-
-- aeon-db tables
-
-- ceph directory structure
-
-- qc protocols (for raw and preprocessed data)
-
-- data preprocessing algorithms
-
-- bonsai workflows
+- Experiments, by name, including full hardware specs (arena, I/O devices, 
+  acquisition computer, etc.)
+- Repositories, including code related to:
+  - Bonsai experiment workflows
+  - Quality Control protocols (for raw and preprocessed data)
+  - Data processing algorithms
+- aeon-db Database
+  - aeon-db tables
 
 ### Issue Tracking
 
-We prioritize and track dev progress using Github Discussions and Github 
-Issues in Github Projects. Each code repository has at least 3 project boards 
-at a given time: one for the issues that need to be completed before the next 
-experiment, one for general feature requests and bugs, and one for 
-documentation.
+We prioritize and track dev progress using Github Discussions and Github Issues in Github Projects. Issues and Discussions should ideally be created in the specific repository appropriate for the Issue/Discussion; all experiment and general Issues and Discussions should be created in 'aeon_experiments'.
 
 ### Continuous Integration (CI)
 
-We use Github Actions to run CI. We run unit tests on Github Virtual 
-Machines on Windows, MacOS, and Ubuntu. We run integration tests on the SWC 
-HPC. Workflows of the CI jobs we run can be found in each repo's respective 
-`.github/workflows/` directory.
+We use Github Actions to run CI. We run unit tests on Github Virtual Machines on Windows, MacOS, and Ubuntu. We run integration tests on the SWC HPC. Workflows of the CI jobs we run can be found in each repo's respective `.github/workflows/` directory.
 
 ### Contributing
 
-Each repository roughly follows the 
-[github flow](https://guides.github.com/introduction/flow/) (which is adapted 
-from the more general 
+Each repository roughly follows the [github flow](https://guides.github.com/introduction/flow/) (which is adapted from the more general 
 [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)). 
-In brief, each of our repos has a 'main' branch which serves as our 
-"in-production" branch, and we have feature and bug fix branches branched off
-of 'main'. At certain agreed upon timepoints we create a "stable release" from
-our main branch which serves as a snapshot of the code at the time, 
-version numbered according to [SemVer](http://semver.org/).
 
-When contributing to any repository, the change to be made should first be 
-discussed in a Github Discussion or a Github Issue. Thereafter, contributors
-should create a new branch (branched off of 'main') that contains the 
-changes/additions they wish to make, and then create a pull request for 
-merging this branch into 'main'.
+In brief, each of our repos has 'main' and 'prod' branches. Feature and bug fix branches are branched off of 'main', with Pull Requests sent back into 'main'. 'main' contains the full commit history of the project, up to the latest stable commit. Upon merges into 'main', a squash merge is performed into 'prod', such that 'prod' contains an abbreviated commit history of the project, with commits pertaining only to Pull Request merges. 'prod' thus serves as a "production" branch to allow for easier readability of project history and easier reversion of uncaught bug commits. At certain agreed upon timepoints we create "stable releases" (available in the "releases" section of the repository) which serve as a snapshot of the code at the time, version numbered according to [SemVer](http://semver.org/).
 
-All pull requests will be reviewed by the
-[project maintainers](#Project-Maintainers). Minimally, maintainers should 
-follow the below steps when reviewing pull requests:
+When contributing to any repository, the change to be made should first be discussed in a Github Discussion or a Github Issue. Thereafter, contributors should create a new branch (branched off of 'main') that contains the changes/additions they wish to make, and then create a pull request for merging this branch into 'main'.
 
-1) Ensure new code adheres to the 
-   [style and documentation guidelines](#Style-and-Documentation-Guidelines), 
-   is covered by a test, and passes a build test. These can all be checked via
-   CI.
+All pull requests will be reviewed by the [project maintainers](#Project-Maintainers). Minimally, maintainers should follow the below steps when reviewing pull requests:
 
-2) As necessary, update the `changelog`, `readme`, callgraphs, env config 
-   files, and any other relevant doc and config files.
+1) Ensure new code adheres to the [style and documentation guidelines](#Style-and-Documentation-Guidelines), is covered by a test, and passes a build test. These can all be checked via CI.
 
-3) Follow the 
-   ["squash, rebase, merge"](https://blog.carbonfive.com/always-squash-and-rebase-your-git-commits/) 
-   workflow when merging the pull request. In essence, this means that upon 
-   completion of a feature branch that is ready to be merged into 'main', 1) 
-   the feature branch should be pushed to Github; 2) locally, the feature 
-   branch should be rebased and squashed down to the commit from which it 
-   branched off of 'main' (this is a useful git command for finding the 
-   "branched off" commit: 
-   `git log --graph --decorate --pretty=oneline --abbrev-commit`, and this for 
-   rebase squashing: `git rebase -i <commitSHA>`); 3) the feature branch 
-   should be merged into 'main'; 4) the feature branch should be deleted 
-   locally. This way it is ensured that the feature branch keeps its full 
-   history on Github, while the 'main' branch keeps an abridged history that 
-   is easy to read and undo.
+2) As necessary, ensure `changelog`, `readme`, config and doc files are updated.
+
+3) When a branch is ready to be merged back into 'main', always make sure to first pull 'main' locally, then rebase the feature branch onto 'main' (cleaning up any merge conflicts as necessary), before merging the PR. The squash merge into 'prod' can be handled via CI. E.g., see [here](https://github.com/SainsburyWellcomeCentre/aeon_mecha/tree/main/.github/workflows/squash_merge_to_prod.yml)
 
 ### Style and Documentation Guidelines
 
-Please see our 
-[style and documentation guidelines](https://github.com/ProjectAeon/blog/blob/main/style_and_doc_guidelines.md).
+Please see our [style and documentation guidelines](https://github.com/ProjectAeon/blog/blob/main/style_and_doc_guidelines.md).
 
-We also believe in the 
-[readme manifesto](http://thinkinghard.com/blog/TheREADMEManifesto.html), 
-which says that `readme` files should provide at least a general description 
-that covers _all_ of a project's files, and that one `readme` per subdirectory 
-is generally good practice.
+We also believe in the [readme manifesto](http://thinkinghard.com/blog/TheREADMEManifesto.html), which says that `readme` files should provide at least a general description that covers _all_ of a project's files, and that one `readme` per subdirectory is generally good practice.
 
 ### Code of Conduct
 
@@ -170,8 +120,8 @@ Gonçalo Lopes, Jai Bhagat.
 ## Repository Contents
 
 - `code_of_conduct.md`: Project Aeon's code of conduct.
+- `data_contract.md`: An example of a data contract for devices <-> generated Aeon experiment data.
 - `design_considerations.md`: Design considerations for Project Aeon.
 - `glossary.tsv`: A glossary of Project Aeon terminology.
-- `init_proj.sh`: A script for initializing a project repository.
-- `member_info.tsv`: A table with Project Aeon member names and affiliations.
+- `init_proj.sh`: A shell script for initializing a project repository.
 - `style_and_doc_guidelines.md`: Code style and documentation guidelines for Project Aeon.
