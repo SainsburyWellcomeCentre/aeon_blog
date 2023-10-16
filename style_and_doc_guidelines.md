@@ -12,24 +12,24 @@ We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep25
 ## Function and Class Docstrings
 
 * Function names should describe the action they perform. Functions have the following sections in the given order:
-	- One-line summary description, typically as a verb phrase
-	- Long description (optional)
-	- Inputs
-	- Outputs
-	- Examples (optional if included in a separate file)
-	- Warnings/Exceptions (optional)
-	- Additional notes (optional)
-	- See also (optional)
-	- Todos (optional)
+  - One-line summary description, typically as a verb phrase
+  - Long description (optional)
+  - Inputs
+  - Outputs
+  - Examples (optional if included in a separate file)
+  - Warnings/Exceptions (optional)
+  - Additional notes (optional)
+  - See also (optional)
+  - Todos (optional)
 * Class names should describe the entity they represent. Classes have the following sections in the given order:
-	- One-line summary description, typically as a noun phrase
-	- Properties / Attributes
-	- Long description (optional)
-	- Examples (optional if included in a separate file)
-	- Warnings/Exceptions (optional)
-	- Additional notes (optional)
-	- See also (optional)
-	- Todos (optional)
+  - One-line summary description, typically as a noun phrase
+  - Properties / Attributes
+  - Long description (optional)
+  - Examples (optional if included in a separate file)
+  - Warnings/Exceptions (optional)
+  - Additional notes (optional)
+  - See also (optional)
+  - Todos (optional)
 
 ## Whitespace conventions
 
@@ -49,13 +49,13 @@ We generally adhere to [pep8](https://www.python.org/dev/peps/pep-0008/), [pep25
 ## Additional Conventions
 
 * Naming conventions:
-	- Variable and function names are in lower snake_case (e.g. `exp_ref`, `infer_parameters` with a `_` in between each individual word representation).
-	- Classes are in upper Snake_Case (e.g. `Alyx_Panel`).
-	- Prefix 'n' is used for integer values e.g. `n_items`.
-	- Suffix 'num' is used for referring to a particular instance e.g. `item_num`.
-	- Suffices that indicate unit measurement are used when using multiple units e.g. `wheel_deg` and `wheel_mm`.
-	- Re-use of variable names (i.e. mutation) is generally avoided.
-	- Variables across related files which share names should share meanings.
+  - Variable and function names are in lower snake_case (e.g. `exp_ref`, `infer_parameters` with a `_` in between each individual word representation).
+  - Classes are in upper Snake_Case (e.g. `Alyx_Panel`).
+  - Prefix 'n' is used for integer values e.g. `n_items`.
+  - Suffix 'num' is used for referring to a particular instance e.g. `item_num`.
+  - Suffices that indicate unit measurement are used when using multiple units e.g. `wheel_deg` and `wheel_mm`.
+  - Re-use of variable names (i.e. mutation) is generally avoided.
+  - Variables across related files which share names should share meanings.
 * Comments are for explaining _what_ a particular chunk of code does when it may be unintuitive, not for explaining exactly _how_ the code does what it does.
 * Block comments read as a narrative.
 * In function calls, keyword arguments should should be specified when not obvious.
